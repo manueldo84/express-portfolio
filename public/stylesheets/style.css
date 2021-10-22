@@ -58,11 +58,22 @@ section .caption{font-size:38px;margin-top:20px;}
 
 
 #header{width:100%;background:white;}
-#header .inner{padding:10px 20px;display:flex;align-items: center}
-#header .nav-container{display:inline-block;margin:0 0 0 auto;max-width:700px;text-align:center;}
+#header .inner{padding:10px 20px;display:flex;align-items: center; justify-content: space-between;}
+#header .nav-container{display:inline-block;margin:0 0 0 auto;text-align:center;}
 #header .nav-container .fas{font-size:22px;margin-right:10px;position:relative;top:4px;}
 #header nav a{margin:0 15px;}
 #header nav a:hover{color:#5499C7;}
+
+#header .login-btn {
+  color:white;
+  background:#5499C7;
+  padding:15px;
+  border-radius:5px;
+}
+
+#header .login-btn:hover {
+  color:white;
+}
 
 #footer{width:100%;padding:20px;color:#fff;background:#5499C7;}
 #footer .copyright{text-align:center;margin:10px auto;}
@@ -112,3 +123,6 @@ main{padding:20px;}
 .contactform .textbox{border:2px solid #5499C7;display:block;border-radius:5px;max-width:360px;min-width:300px;margin:10px 0;padding:15px;outline:none;transition:all 0.3s;font-size:16px;font-weight:bold;color:#444;font-family:'Noto Sans',sans-serif;}
 .contactform .textbox:focus{background:#5499C7;color:white;}
 
+#login-form {
+  
+}

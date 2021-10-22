@@ -29,6 +29,13 @@ router.get('/projects', function(req, res) {
     res.render('pages/projects',{global_data:global_data});
 });
 
+router.get('/login', function(req, res) {
+    var global_data={
+        "page_title":"Manu Mathew Eldo - Projects"
+    };
+    res.render('pages/login',{global_data:global_data});
+});
+
 router.get('/aboutme', function(req, res) {
     var global_data={
         "page_title":"Manu Mathew Eldo - About Me"
