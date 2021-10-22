@@ -9,9 +9,17 @@
     </header>
     <main id="main">
         <form id="login-form" method="POST">
-            <input type="text" placeholder="Username"/>
-            <input type="password" placeholder="Password"/>
-            <button type="submit">Login</button>
+            <h1>Login</h1>
+            <div>
+                <input class="textbox" type="text" placeholder="Username" name="username"/>
+            </div>
+            <div>
+                <input class="textbox" type="password" placeholder="Password" name="password"/>
+            </div>
+            <div class="submission">
+                <button class="button" type="submit">Login</button>
+                <p><%= submitRes %></p>
+            </div>
         </form>
     </main>
     <footer id="footer">

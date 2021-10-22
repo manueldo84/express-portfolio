@@ -5,9 +5,22 @@
 	Date: 2021-10-20
 */
 
-var port=process.env.PORT || 8080;
+var db=require('./db/db');
+var port=process.env.PORT || 8081;
 var express = require('express');
 var app = express();
+var session = require('express-session');
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
+app.use(session({
+	secret: 'very$ecure@pp69',
+	resave: false,
+	saveUninitialized: true,
+	cookie: { secure: false }
+}));
+
 
 var router=require('./routes/index.js');
 app.set('view engine', 'ejs');

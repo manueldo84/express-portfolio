@@ -64,6 +64,8 @@ section .caption{font-size:38px;margin-top:20px;}
 #header nav a{margin:0 15px;}
 #header nav a:hover{color:#5499C7;}
 
+h1, h2, h3, h4, h5, h6 {margin-top:0;}
+
 #header .login-btn {
   color:white;
   background:#5499C7;
@@ -124,5 +126,50 @@ main{padding:20px;}
 .contactform .textbox:focus{background:#5499C7;color:white;}
 
 #login-form {
-  
+  background:white;
+  color:black;
+  padding:40px;
+  max-width:500px;
+  margin:85px auto;
+}
+
+.textbox{border:2px solid #5499C7;display:block;border-radius:5px;max-width:360px;min-width:300px;margin:10px 0;padding:15px;outline:none;transition:all 0.3s;font-size:16px;font-weight:bold;color:#444;font-family:'Noto Sans',sans-serif;}
+
+#login-form h1 {
+  font-size:42px;
+}
+
+#login-form .submission {
+  display:flex;
+  align-items: center;
+}
+
+#login-form .button {
+  margin-right:15px;
+}
+
+.center-con {
+  max-width:1000px;
+  background:white;
+  padding:40px;
+  margin:30px auto;
+}
+
+#contact-list .top {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:-20px;
+  padding-bottom:10px;
+  border-bottom:2px solid #ddd;
+  margin-bottom:20px;
+}
+
+#contact-list table {
+  width:100%;
+}
+
+#contact-list table td {
+  color:#5499C7;
+  text-align: center;
 }
